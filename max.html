@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = prompt("nhap so phan tu");
+    let arr = [];
+    for (i=0;i<x;i++) {
+    let acc = Number(prompt("so phan tu" + i));
+    arr.push(acc);
+    }
+    let max = x[0];
+    let index =0;
+    for (i=1;i<x.length;i++) {
+        if (max < x[i]) {
+            max = x[i];
+            index = 1;
+        }
+    }
+    alert("gia tri lon nhat" + max + "vi tri");
+</script>
+</body>
+</html>
